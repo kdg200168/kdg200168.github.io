@@ -2189,6 +2189,9 @@ button,
       max-height: 35vh; } }
 
 /* Footer */
+footer{
+    background-color: #BBBBBB;
+}
 #footer .copyright {
   color: #9fa3a6;
   font-size: 0.9em; }
@@ -2280,8 +2283,8 @@ button,
 box-sizing: border-box;
 }
 .cp_cssslider {
-width: 300px;
-padding-top: 200px; /* 画像の高さ */
+width: 400px;
+padding-top: 300px; /* 画像の高さ */
 position: relative;
 margin: 2em auto;
 text-align: center;
@@ -2381,4 +2384,7 @@ opacity: 1;
   left: 0;
   margin: auto;
   text-align: center;
+}
+.sample1{
+    color:floralwhite
 }
