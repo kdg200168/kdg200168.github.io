@@ -15,13 +15,14 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video , sample1,page_top{
+section, summary, time, mark, audio, video , txt1,txt2,txt3,txt4,page_top,topic,test1,{
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -128,7 +129,7 @@ em, i {
   font-style: italic; }
 
 p {
-  margin: 0 0 2em 0; }
+  margin: 0 0 1em 0; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #3d4449;
@@ -147,7 +148,9 @@ h1 {
   line-height: 1.3; }
 
 h2 {
-  font-size: 1.75em; }
+  font-size: 1.75em;
+        text-align: left; 
+    margin: 0 0 0.1em 0; }
 
 h3 {
   font-size: 1.25em; }
@@ -1286,7 +1289,7 @@ dl {
   dl dt {
     display: block;
     font-weight: 600;
-    margin: 0 0 1em 0; }
+    margin: 0 0.8em 0.5em 0; }
   dl dd {
     margin-left: 2em; }
 
@@ -1867,7 +1870,7 @@ button,
     #main > .inner {
       padding: 0 5em 0.1em 5em ; }
       #main > .inner > section {
-        padding: 5em 0 3em 0 ; } }
+        padding: 1em 0 1em 0 ; } }
   @media screen and (max-width: 1280px) {
     #main > .inner {
       padding: 0 4em 0.1em 4em ; }
@@ -1940,8 +1943,8 @@ button,
     width: 26em; }
     #sidebar > .inner > * {
       border-bottom: solid 2px rgba(210, 215, 217, 0.75);
-      margin: 0 0 3.5em 0;
-      padding: 0 0 3.5em 0; }
+      margin: 0 0 1em 0;
+      padding: 0 0 1em 0; }
       #sidebar > .inner > * > :last-child {
         margin-bottom: 0; }
       #sidebar > .inner > *:last-child {
@@ -2288,6 +2291,7 @@ padding-top: 300px; /* 画像の高さ */
 position: relative;
 margin: 2em auto;
 text-align: center;
+    
 }
 .cp_cssslider > img {
 position: absolute;
@@ -2296,6 +2300,7 @@ top: 0;
 transition: all 0.5s;
 border-radius: 3px;
 box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+    
 }
 .cp_cssslider input[name='cp_switch'] {
 display: none;
@@ -2309,6 +2314,7 @@ cursor: pointer;
 transition: all 0.5s ease;
 opacity: 0.6;
 border-radius: 3px;
+    
 }
 .cp_cssslider label:hover {
 opacity: 0.9;
@@ -2317,6 +2323,7 @@ opacity: 0.9;
 display: block;
 width: 40px;
 border-radius: 2px;
+    
 }
 .cp_cssslider input[name='cp_switch']:checked + label {
 border: 2px solid #FF7043;
@@ -2332,7 +2339,11 @@ opacity: 1;
 .video{
   position:relative;
   width:100%;
+     margin:  auto;               /* 中央寄せ */
   padding-top:56.25%;
+         height: 0;
+     overflow: hidden;
+     max-width: 1080px;
 }
 .video iframe{
   position:absolute;
@@ -2342,13 +2353,14 @@ opacity: 1;
   height:100%;
 }
 #page_top{
-  width: 100px;
-  height: 60px;
+  width: 5rem;
+  height: 3.3rem;
   position: fixed;
   right: 0;
   bottom: 0;
   background: #3366FF;
   opacity: 0.6;
+
 }
 #page_top a{
   position: relative;
@@ -2385,7 +2397,41 @@ opacity: 1;
   margin: auto;
   text-align: center;
 }
-.sample1{
-    color:floralwhite
+.topics dl {
+padding: 5px 0;
+/*border-bottom: 1px solid #ccc;*/
+}
+.topics dt {
+clear: left;
+float: left;
+
+}
+.topics dd {
+margin-left: 11%;
 }
 
+@media screen and (min-width: 768px) {
+.topics dt {
+clear: left;
+float: left;
+
+}
+.topics dd {
+margin-left: 11%;
+}
+    .test1{
+  /* position: absolute;          /* 位置指定 */
+   padding: 10px;               /* 余白指定 */
+  /* top:  0;                     /* 位置指定 */
+   bottom:  0;                  /* 位置指定 */
+   left:  0;                    /* 位置指定 */
+   right:  0;                   /* 位置指定 */
+   margin:  auto;               /* 中央寄せ */
+   width:  640px;               /* 幅指定 */
+   height: 300px;                /* 高さ指定 */
+    }
+    html{
+  scroll-behavior: smooth;
+}
+
+}
