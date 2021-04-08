@@ -10,6 +10,20 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="bxslider-4-4.2.12/dist/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+   	 $('.bxslider').bxSlider({
+		auto: false,
+         responsive: true,
+		slideWidth: 640,
+		//minSlides: 3
+	});
+});
+</script>
 	</head>
 	<body class="is-preload">
 
@@ -22,48 +36,59 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>ホームへ戻る</strong> </a>
+                                   <h2>作品紹介 シティラン</h2>
+                                    
 								</header>
 
 							<!-- Content -->
-								<section>
-									<header class="major">
-										<h1>作品紹介 シティラン </h1>
-                                    </header>
-                         
-                                    <div class="cp_cssslider">
-                                        <input type="radio" name="cp_switch" id="photo1" checked/>
-                                        <label for="photo1"><img src="assets/images/CR/CityRunTitle.png"lt="" width="30" height="20" /></label>
-                                        <img src="assets/images/CR/CityRunTitle.png"  width="400" height="300"/>
-                                        <input type="radio" name="cp_switch" id="photo2"/>
-                                        <label for="photo2"><img src="assets/images/CR/CityRunPlay.png"lt="" width="30" height="20" /></label>
-                                        <img src="assets/images/CR/CityRunPlay.png" alt="" width="400" height="300"/>
-                                        <input type="radio" name="cp_switch" id="photo3"/>
-                                        <label for="photo3"><img src="assets/images/CR/CityRunGameClear.png"lt="" width="30" height="20" /></label>
-                                        <img src="assets/images/CR/CityRunGameClear.png" alt="" width="400" height="300"/>
-                                        <input type="radio" name="cp_switch" id="photo4"/>
-                                        <label for="photo4"><img src="assets/images/CR/CityRunGameOver.png"lt="" width="30" height="20" /></label>
-                                        <img src="assets/images/CR/CityRunGameOver.png"alt="" width="400" height="300" />
+                            <section>
+                                <div class="slider">
+                                    <div class="test1">
+                                    <ul class="bxslider">
+                                        <li><img src="assets/images/CR/CityRunTitle.png" alt="" width="640" height="300"></li>
+                                        <li><img src="assets/images/CR/CityRunPlay.png" alt="" width="640" height="300"></li>
+                                        <li><img src="assets/images/CR/CityRunGameClear.png" alt="" width="640" height="300"></li>
+                                        <li><img src="assets/images/CR/CityRunGameOver.png" alt="" width="640" height="300"></li>
+                                    </ul>
                                     </div>
-                                    <hr>
+                                </div>                   
+                            </section>
+                           <hr>
+                                    <div class= "topics">
                                     <dl>
                                         <dt>開発環境</dt><dd>Unity</dd>
-                                    <hr>
+                                    </dl>   
+                                    <dl>
+                                        <dt>使用言語</dt> <dd>C#</dd>
+                                    </dl>
+                                    <dl>
                                         <dt>制作期間</dt><dd> 3ヶ月</dd>
-                                    <hr>
+                                    </dl>
+                                    <dl>    
                                         <dt>ジャンル</dt><dd>アクションゲーム</dd>
-                                    <hr>
+                                    </dl>
+                                    <dl>
                                       <dt>操作方法</dt>
-                                        <dd>キー操作:　WASDキー　自機移動, 左SHIFTキー　加速,　Zキー　減速,　SPACEキー　弾発射</dd>
-                                        
+                                        <dd>キー操作:　WASDキー　プレイヤー移動, 　SPACEキー　ジャンプ,壁走り,壁キック,　Escキー 一時停止</dd>
                                         <dd>マウス操作:　マウスクリック</dd>
+                                    </dl>
                                     <hr>
-                                        <dt>作品紹介</dt><dd>現代のビル街を舞台にしたタイムアタック形式の3Dアクションゲーム。UIのアニメーションと壁キックの実装を頑張って製作しました。</dd>
+                                     <dl>
+                                        <dt>作品紹介</dt><dd>現代のビル街を舞台にしたタイムアタック形式の3Dアクションゲーム。
+                                        <br>
+                                        クリア条件は制限時間内にゴールへの到達がゲームクリアとなります。<br>
+                                        DOTWEENを使用したUIのアニメーションの実装,Rayを使用してプレイヤーの壁走りや壁キックの実装、SQLiteを使用し最速クリア時間の保存と更新を行える様にしました。</dd>
+                                    </dl>
                                     <hr>
-                                        <dt>ソースコード</dt> <dd>ソースコードは<a href="https://github.com/kdg200168/Portfolio/tree/main/SPACEWARS" target="_blank" rel="nofollow">こちら</a></dd>
+                                    <dl>
+                                        <dt>ソースコード</dt> <dd>ソースコードは<a href="https://github.com/kdg200168/Portfolio/tree/main/CityRun/Scripts" target="_blank" rel="nofollow">こちら</a>から閲覧できます。</dd>
+                                    </dl>
                                    <hr>
-                                        <dt>実行ファイル</dt> <dd>実行ファイルは<a href="https://github.com/kdg200168/Portfolio/tree/main/SPACEWARS" target="_blank" rel="nofollow">こちら</a></dd>
-                                   <hr>
+                                    <dl>
+                                        <dt>実行ファイル</dt> <dd>実行ファイルは<a href="https://drive.google.com/drive/folders/1-lu9F6yoUp85-4gvxgEnJX69CBQ-Ioqk?usp=sharing" target="_blank" rel="nofollow">こちら</a>からDLできます。</dd>
+                                        </dl><hr>
+                                   </div>
+                                    <dl>
                                         <dt>プレイ動画はこちら</dt>
                                     </dl>
 		                          <div class="video">
@@ -71,11 +96,11 @@
                                       <iframe width="560" height="315" src="https://www.youtube.com/embed/PfBH8LtmW_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                                       </iframe>
                                     </div>
-								</section>
                         </div>
-                            <div id="page_top"><a href="#"></a></div>
+                              <hr class="major" />
+                         <div style=" text-align:  center;"><a href="index.html">ホームへ戻る</a> </div>
 							<!-- Footer -->
-                            <hr class="major" />
+            
 								<footer>
      							<li>連絡先</li>
                                             <li class="icon solid fa-envelope">kdg.yoshiki.murakami@gmail.com</li>
@@ -94,15 +119,15 @@
 							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
-										<h2>Menu</h2>
+										<h2>メニュー</h2>
 									</header>
 									<ul>
                                         <li>
-                                            <span class="opener">Home</span>
+                                            <span class="opener">ホーム</span>
                                             <ul>
                                                 <li><a href="index.html#intro">はじめに</a></li>
                                                 <li><a href="index.html#about">自己紹介</a></li>
-                                                <li><a href="index.html#pr">自己PR</a></li>
+
                                             </ul>
                                         </li>
                                         <li>
@@ -143,7 +168,7 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+		<script type=”text/javascript” src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
