@@ -10,6 +10,21 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="bxslider-4-4.2.12/dist/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+   	 $('.bxslider').bxSlider({
+		auto: false,
+         responsive: true,
+		slideWidth: 640,
+		//minSlides: 3
+	});
+});
+</script>
+        
 	</head>
 	<body class="is-preload">
 
@@ -22,71 +37,75 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>ホームへ戻る</strong> </a>
+                                <h2>作品紹介 スペースウォーズ </h2>
+                                    
 								</header>
 
 							<!-- Content -->
-								<section>
-									<header class="major">
-										<h1>作品紹介 スペースウォーズ </h1>
-                                    </header>
-                                    <div class="cp_cssslider">
-                                        <input type="radio" name="cp_switch" id="photo1" checked/>
-                                        <label for="photo1"><img src="assets/images/SW/SpaceWarsTitle.png"lt="" width="30" height="20" /></label>
-                                        <img src="assets/images/SW/SpaceWarsTitle.png"  width="400" height="300"/>
-                                        <input type="radio" name="cp_switch" id="photo2"/>
-                                        <label for="photo2"><img src="assets/images/SW/SpaceWarsPlay01.png"lt="" width="30" height="20" /></label>
-                                        <img src="assets/images/SW/SpaceWarsPlay01.png" alt="" width="400" height="300"/>
-                                        <input type="radio" name="cp_switch" id="photo3"/>
-                                        <label for="photo3"><img src="assets/images/SW/SpaceWarsBoss01.png"lt="" width="30" height="20" /></label>
-                                        <img src="assets/images/SW/SpaceWarsBoss01.png" alt="" width="400" height="300"/>
-                                        <input type="radio" name="cp_switch" id="photo4"/>
-                                        <label for="photo4"><img src="assets/images/SW/SpaceWarsGameClear.png"lt="" width="30" height="20" /></label>
-                                        <img src="assets/images/SW/SpaceWarsGameClear.png"alt="" width="400" height="300" />
-                                        <input type="radio" name="cp_switch" id="photo5"/>
-                                        <label for="photo5"><img src="assets/images/SW/SpaceWarsGameOver.png"alt="" width="30" height="20"/></label>
-                                        <img src="assets/images/SW/SpaceWarsGameOver.png" alt="" width="400" height="300"/>
+                            <section>
+                                <div class="slider">
+                                    <div class="test1">
+                                    <ul class="bxslider">
+                                        <li><img src="assets/images/SW/SpaceWarsTitle.png" alt="" width="640" height="300"></li>
+                                        <li><img src="assets/images/SW/SpaceWarsPlay01.png" alt="" width="640" height="300"></li>
+                                        <li><img src="assets/images/SW/SpaceWarsBoss01.png" alt="" width="640" height="300"></li>
+                                        <li><img src="assets/images/SW/SpaceWarsGameClear.png" alt="" width="640" height="300"></li>
+                                        <li><img src="assets/images/SW/SpaceWarsGameOver.png" alt="" width="640" height="300"></li>
+                                    </ul>
                                     </div>
-                                    <hr>
-                                    <dl>
+                                </div>                   
+                            </section>
+                            <hr>
+                                   <div class= "topics">
+                                    <dl >
                                         <dt>開発環境</dt> <dd>Unity</dd>
-                                       
+                                       </dl>
+                                       <dl>
+                                       <dt>使用言語</dt> <dd>C#</dd>
+                                       </dl>
+                                       <dl>
                                         <dt>制作期間</dt><dd> 1ヶ月</dd>
-                                     
+                                       </dl>
+                                       <dl>
                                         <dt>ジャンル</dt><dd>シューティングゲーム</dd>
-                                    
-                                        <dt>作品紹介</dt><dd>宇宙を舞台にした縦スクロール風の3Dシューティングゲーム。自機の動きをこだわって製作しました。</dd>
-                                   
+                                       </dl>
+                                           <dl>
                                         <dt>操作方法</dt>
                                         <dd>キー操作:　WASDキー　自機移動, 左SHIFTキー　加速,　Zキー　減速,　SPACEキー　弾発射</dd>
                                         <dd>マウス操作:　マウスクリック</dd>
                                     </dl>
                                     <hr>
                                         <dl>
-                                            <dt>作品紹介</dt><dd>宇宙を舞台にした縦スクロール風の3Dシューティングゲーム<br>自機の動きと残機の実装を頑張って製作しました。</dd>
+                                            <dt>作品紹介</dt>
+                                            <dd>宇宙を舞台にした縦スクロール風の3Dシューティングゲーム<br>                           クリア条件は一定時間後に現れるボスを撃破するとゲームクリアになります。<br>
+                                                ゲームオーバー条件は自機の残機が0の状態でHPが0になるとゲームオーバーになります。<br>
+                                                自機の動きと残機の実装を頑張って製作しました。</dd>
                                         </dl>
+                            </div>
                                     <hr>
+                                       <div class= "topics">
                                     <dl>
-                                        <dt>ソースコード</dt><dd>コードは<a href="https://github.com/kdg200168/Portfolio/tree/main/SPACEWARS" target="_blank" rel="nofollow">こちら</a></dd>
+                                        <dt>ソースコード</dt><dd>コードは<a href="https://github.com/kdg200168/Portfolio/tree/main/SPACEWARS" target="_blank" rel="nofollow">こちら</a>から閲覧できます。</dd>
+                                    </dl>
+                                       </div>
+                                    <hr>
+                            <div class= "topics">
+                                    <dl>
+                                        <dt>実行ファイル</dt><dd>実行ファイルは<a href= "https://drive.google.com/drive/folders/1JnvqTRZo_mEiLQISxvYBhI7mbDw2qZAx?usp=sharing">こちら</a>からDLできます。</dd>
                                     </dl>
                                     <hr>
-                                    <dl>
-                                        <dt>実行ファイル</dt><dd>実行ファイルは<a href= "https://drive.google.com/drive/folders/1JnvqTRZo_mEiLQISxvYBhI7mbDw2qZAx?usp=sharing">こちら</a></dd></dl>
-                                    <hr>
+                                </div>
                                     <dl>
                                         <dt>プレイ動画はこちら</dt>
                                     </dl>
 		                          <div class="video">
-									<iframe 
+									<iframe width="854" height="480" 
                                             src="https://youtube.com/embed/playlist?list=PL4mk8sDbTnfFLf5r35GmyeEkHumdufL2U"
-                                            frameborder="0" allowfullscreen>
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                                     </iframe>
                                     </div>
-								</section>
-                                    <hr>
-                                    <div id="page_top"><a href="#"></a>
-                                    </div>
-								
+                                    <hr>	
+                            <div style=" text-align:  center;"><a href="index.html">ホームへ戻る</a> </div>
                         </div>
                             <!-- Footer -->
 								<footer>
@@ -108,15 +127,14 @@
 							<!-- Menu -->
 								<nav id="menu">
 									<header class="major">
-										<h2>Menu</h2>
+										<h2>メニュー</h2>
 									</header>
 									<ul>
                                         <li>
-                                            <span class="opener">Home</span>
+                                            <span class="opener">ホーム</span>
                                             <ul>
                                                 <li><a href="index.html#intro">はじめに</a></li>
                                                 <li><a href="index.html#about">自己紹介</a></li>
-                                                <li><a href="index.html#pr">自己PR</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -136,7 +154,7 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<p>連絡先</p>
+										<h2>連絡先</h2>
 									</header>
 									<ul class="contact">
 										<li class="icon solid fa-envelope">kdg.yoshiki.murakami@gmail.com</li>
@@ -157,7 +175,7 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<script type=”text/javascript” src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
