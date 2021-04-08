@@ -15,7 +15,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video , txt1,txt2,txt3,txt4,page_top{
+section, summary, time, mark, audio, video , sample1,page_top{
   margin: 0;
   padding: 0;
   border: 0;
@@ -2385,3 +2385,7 @@ opacity: 1;
   margin: auto;
   text-align: center;
 }
+.sample1{
+    color:floralwhite
+}
+
