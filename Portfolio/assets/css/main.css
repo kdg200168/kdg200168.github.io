@@ -40,7 +40,7 @@ footer, header, hgroup, menu, nav, section {
     /*背景画像の設定*/
     background: url(images/3753817_m.jpg);
     background-size: cover;
-
+background-attachment: fixed;
     /*透過の設定*/
     opacity: 0.5;
 }
