@@ -1,5 +1,5 @@
 ///
-/// Editorial by HTML5 UP
+/// Solid State by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -12,36 +12,32 @@
 
 		li {
 			@include icon;
-			border-top: solid 1px _palette(border);
-			margin: 1.5em 0 0 0;
-			padding: 1.5em 0 0 3em;
+			margin: (_size(element-margin) * 1.25) 0 0 0;
+			padding: 0 0 0 3.25em;
 			position: relative;
 
 			&:before {
-				color: _palette(accent);
+				border-radius: 100%;
+				border: solid 2px _palette(border);
 				display: inline-block;
-				font-size: 1.5em;
-				height: 1.125em;
+				font-size: 0.8em;
+				height: 2.5em;
 				left: 0;
-				line-height: 1.125em;
+				line-height: 2.35em;
 				position: absolute;
 				text-align: center;
-				top: (1.5em / 1.5);
-				width: 1.5em;
+				top: 0;
+				width: 2.5em;
 			}
 
 			&:first-child {
-				border-top: 0;
 				margin-top: 0;
-				padding-top: 0;
-
-				&:before {
-					top: 0;
-				}
 			}
+		}
 
-			a {
-				color: inherit;
+		@include breakpoint('<=small') {
+			li {
+				margin: (_size(element-margin) * 0.75) 0 0 0;
 			}
 		}
 	}
